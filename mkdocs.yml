@@ -1,7 +1,7 @@
 site_name: KSA Modding Wiki (Unofficial)
 site_description: Unofficial, community-driven modding documentation for Kitten Space Agency.
-site_url: https://example.github.io/ksa-modding-wiki/
-repo_url: https://github.com/example/ksa-modding-wiki
+site_url: https://ksamodding.github.io/KSAModding
+repo_url: https://github.com/KSAModding/KSAModding
 repo_name: ksa-modding-wiki
 
 theme:
@@ -37,7 +37,7 @@ nav:
   - Mod Types:
       - Parts: mod-types/parts.md
       - Planets: mod-types/planet.md
-      - System: mod-tpes/system.md
+      - System: mod-types/system.md
       - Code: mod-types/code.md
   - Pipelines & Tools:
       - Modeling Pipeline: pipelines-tools/modeling-pipeline.md
