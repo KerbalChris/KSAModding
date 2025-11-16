@@ -6,6 +6,12 @@ First make sure you installed StarMap via this guide: [StarMap installation guid
 
 ## How to install mods
 
+## Method 1: KSA Mod Loader
+1. Download the zip file for the mod.
+2. Copy and paste the zip file into the `ModSetup` folder of KSA Mod Loader
+3. Run KSA Mod Loader and select option "2" to install.
+
+## Method 2: Manual
 1.  Download the mod's zip that contains the class library dll as well as any dependencies.
 2.  Extract the zip folder so that the .dll file is inside a folder with the same nam as the .dll file.
     ```
