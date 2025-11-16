@@ -1,13 +1,39 @@
-# Your First Simple Mod
 
-This tutorial walks you through the rough structure of creating a very simple mod, such as tweaking a configuration value or swapping a texture.
+# How to create mods
 
-_This page is intended as a gentle introduction; more advanced topics are covered in later sections._
+-   Create a new class library targeting .NET 9
+-   Add `https://nuget.pkg.github.com/StarMapLoader/index.json` as a nuget source ([For Visual Studio](https://nuget.pkg.github.com/StarMapLoader/index.json))
+-   Import [StarMap.API](https://github.com/StarMapLoader/StarMap/pkgs/nuget/StarMap.API)
+-   Create a new class that implements IStarMapMod
+-   Implement the methods from the interface
+    -   OnImmediatLoad is called immediatly when the mod is finished loading (before Mod.PrepareSystems)
+    -   OnFullyLoaded is called when all Mods are loaded (After ModLibrary.LoadAll)
+    -   ImmediateUnload boolean states if the unload method should be called immediatly after OnImmediatLoad
+    -   Unload is called or immedialty, or when the game unloads
 
-## Goals
+## How to publish and install mods
 
-By the end of this tutorial you should:
+-   Provide a zip or folder that contains the the class library dll as well as any dependencies excluding:
+    -   Any part of KSA
+    -   Harmony
+-   Provide a mod.toml in the folder that contains the name of the mod 'name = [mod name]` (known in KSA as mod id)
+-   The mod id needs to match the name of the assembly that contains the IStarMapMod class
+-   StarMap will search for mods that have a dll like this, and then loads the first class that implements IStarMapMod (if any)
+-   StarMap mods still work as normal KSA mods (so any textures added to the same folder will work correctly)
+-   Lastly the mod needs to be added to the manifest.toml in the content folder, the id needs to match the id set above
 
-- Understand where basic game data lives.
-- Create a small change that you can enable/disable easily.
-- Know where to look for errors when something goes wrong.
+```
+[[mods]]
+id = "[mod name]"
+enabled = true
+```
+
+-   When now loading the game via `StarMap.exe` or `StarMapLoader.exe`, the mod should be loaded and run
+
+## How to build simple example mod
+
+-   Add a folder on the same level as the solution folder called "Import"
+-   Add the KSA binaries there
+-   (Also possible to alter this location in the .csproj)
+-   Build the project, it should output the needed files
+-   Copy over the mod.toml. SimpleMod.dll and SimpleMod.Deps.json to KSA, this should load
