@@ -7,6 +7,8 @@ This site aims to become the _primary_ reference for creating, maintaining, and 
 !!! info "Unofficial project"
     This wiki is a **community-driven, unofficial resource**. It is not affiliated with or endorsed by the KSA developers. All trademarks and copyrights belong to their respective owners.
 
+Join our [KSA Modding Discord](https://discord.gg/6WzcTaF2)
+
 ## What you'll find here
 
 - **Getting Started** – set up your tools and create your first simple mod.
