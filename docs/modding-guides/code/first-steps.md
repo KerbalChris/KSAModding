@@ -18,8 +18,6 @@ To develop mods using visual studio you need the following prerequisites
 
 Currently the most popular way to create mods is by using [StarMap](https://github.com/StarMapLoader/StarMap). 
 
----
-
 Before starting this guide it is recommended to set up the example mod and running it to verify StarMap is working. You can find a guide [here](/KSAModding/getting-started/installing-mods/) and an example mod [here](https://github.com/StarMapLoader/StarMap-ExampleMods/releases/tag/0.1.4)
 
 ### Creating the Visual Studio project
@@ -145,7 +143,7 @@ namespace FirstMod
 ```
 
 Lets make a simple hello world program now.
----
+
 Just add a `Console.WriteLine("Hello World!")`
 
 Inside FirstMod:
@@ -173,8 +171,6 @@ name = "FirstMod"
 ## Step 4: Compiling
 
 If you did all steps correctly simply right clicking the project and selecting `Build` should build the files.
-
----
 
 The compiled files will now be in the following directory: `projectdir\FirstMod\bin\Debug\net9.0`.
 Now follow the [installation guide](/KSAModding/getting-started/installing-mods/) to test your brand new mod. If you did all the steps correctly you should see `Hello World!` in the console output of StarMap.exe.
