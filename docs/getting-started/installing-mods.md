@@ -2,7 +2,7 @@
 
 This page covers how to install mods that work with StarMap.
 
-First make sure you installed StarMap via this guide: [StarMap installation guide](http://127.0.0.1:8000/KSAModding/getting-started/install-tools/#starmap-ksa-code-loader)
+First make sure you installed StarMap via this guide: [StarMap installation guide](/KSAModding/getting-started/install-tools/#starmap-ksa-code-loader)
 
 ## How to install mods
 
