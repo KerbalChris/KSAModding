@@ -97,7 +97,6 @@ Create a class under the namespace FirstMod with the name FirstMod. And let it i
 
 ```c#
 using StarMap.API;
-using KSA;
 
 namespace FirstMod
 {
@@ -116,7 +115,6 @@ The api exposes a couple of attributes but for this simple hello world example w
 
 ```c#
 using StarMap.API;
-using KSA;
 
 namespace FirstMod
 {
