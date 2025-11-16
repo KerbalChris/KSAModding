@@ -45,7 +45,6 @@ nav:
       - Tools Index: pipelines-tools/tools-index.md
   - Advanced & Internals:
       - Reverse Engineering Notes: advanced-internals/reverse-engineering.md
-      - Save File Structure: advanced-internals/save-file-structure.md
   - Troubleshooting:
       - Logs and Debugging: troubleshooting/logs-and-debugging.md
   - Meta:
