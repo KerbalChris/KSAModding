@@ -1028,7 +1028,78 @@ This is just how the planet looks, only required part is the Diffuse
  - B: Blue color, RGB 0-1
 
 ### Atmosphere
-TBA
+The atmosphere block can only be used for atmospheric bodies. The atmosphere block contains 2 sections, physical and visual.
+
+#### Physical
+This is obviously required, as without it your atmosphere won't do anything.
+
+The following text is an example of a physical atmosphere:
+```xml
+        <Atmosphere>
+            <Physical>
+                <SeaLevelPressure Atm="1.0"/>
+                <SeaLevelDensity KgPerM3="0.16"/>
+                <ScaleHeight Km="75" />
+            </Physical>
+        </Atmosphere>
+```
+SeaLevelPressure: This is the pressure of the atmosphere at sea level. I'm not sure if it currently does anything. Uses units Atm (Earth Atmospheric Pressure).
+
+SeaLevelDensity: This is the density of the atmosphere at sea level. If it is higher than the density of your vessel, your vessel will float above a certain point. Uses units KgPerM3 (Kilograms per cubic Meter).
+
+ScaleHeight: This is the height at which your atmosphere will have 0 pressure and 0 density. Uses all units for 1 dimensional measurement that are implemented into the game.
+
+#### Visual
+This determines the color, light reflection, and overall look of the atmosphere. Without it, the atmosphere will not be visible.
+
+The following text is an example of a visual atmosphere:
+```xml
+        <Atmosphere>
+            <Visual>
+                <RayleighScattering>
+                    <Coefficients R="1.8e-4" G="1.8e-4" B="1.1e-4" />
+                    <ScaleHeight Km="650"/>
+                </RayleighScattering>
+                <MieScattering>
+                    <Coefficients R="4e-4" G="4e-4" B="4e-4"/>
+                    <ScaleHeight Km="100"/>
+                    <PhaseFunctionAsymmetry X="0.1" Y="0.1" Z="0.1"/>
+                </MieScattering>
+            </Visual>
+        </Atmosphere>
+```
+RayleighScattering:
+ - This is the light scattering in the upper atmosphere
+ - Coefficients: This is the color. Higher numbers will show denser and less transparent. Uses RGB 0-1.
+ - ScaleHeight: The height at which the atmosphere will no longer be visible
+
+MieScattering:
+ - This is the light scattering in the lower atmosphere
+ - Coefficients: This is the color. Higher numbers will show denser and less transparent. Uses RGB 0-1.
+ - ScaleHeight: The height at which the atmosphere will no longer be visible
+ - PhaseFunctionAsymmetry: This makes light bounce in different differections. For example, a higher X value will make light more likely to bounce in the X direction
+
+#### Full Example
+```xml
+        <Atmosphere>
+            <Visual>
+                <RayleighScattering>
+                    <Coefficients R="1.8e-4" G="1.8e-4" B="1.1e-4" />
+                    <ScaleHeight Km="650"/>
+                </RayleighScattering>
+                <MieScattering>
+                    <Coefficients R="4e-4" G="4e-4" B="4e-4"/>
+                    <ScaleHeight Km="100"/>
+                    <PhaseFunctionAsymmetry X="0.1" Y="0.1" Z="0.1"/>
+                </MieScattering>
+            </Visual>
+            <Physical>
+                <SeaLevelPressure Atm="1.0"/>
+                <SeaLevelDensity KgPerM3="0.16"/>
+                <ScaleHeight Km="75" />
+            </Physical>
+        </Atmosphere>
+```
 
 ### Oceans
 TBA
