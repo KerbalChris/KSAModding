@@ -6,6 +6,21 @@
 
 Represents a pair of booleans.
 
+## Example
+
+```c#
+public void OnFullyLoaded()
+{
+    bool2 example = new bool2(true, false);
+
+    if(example.YX == new bool2(false, true))
+    {
+        Console.WriteLine("The swizzle worked!");
+    }
+}
+```
+
+
 ## Constructors
 
 ### `bool2(bool x, bool y)`

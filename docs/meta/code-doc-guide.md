@@ -30,14 +30,13 @@ Code Docs
 
 
 ## Structure
-
 ### Page title
-The title of the page should always include the full namespace and type
+The title of the page should always include the full namespace and type.
 #### bool2 Example
 **`struct Brutal.Numerics.bool2`**
 
 ### Last tested version
-To keep everyone on the same page always include a version tag above the page title like this
+To keep everyone on the same page always include a version tag above the page title like this.
 ```markdown
 <sub><sup>Tested with: **KSA Version 2025.11.4.2791**</sup></sub>
 # Title
@@ -54,18 +53,20 @@ Example for bool2:
 > **Assembly:** `Brutal.Core.Numerics.dll`
 ``` 
 
-
 ### Short description
 After the last tested version provide a short description for that specific code element.
 
+### Code example (optional)
+If you want to help users get up and running quickly include a small example of how to use the specific function or class.
+
 ### Function prototype
-After the description add a section that lists all function protoypes for a function. In case of class or struct list the constructors instead. For a detailed example go to the [bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2)
+After the description add a section that lists all function protoypes for a function. In case of class or struct list the constructors instead. For a detailed example go to the [bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2).
 
 ### Members (classes and structs)
-When writing documentation for classes or structs, if it has public members add a section for those as well. For a detailed example go to the [bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2)
+When writing documentation for classes or structs, if it has public members add a section for those as well. For a detailed example go to the [bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2).
 
 ### Methods (classes and structs)
-When writing documentation for classes or structs, if it has public methods add a section for those as well. For a detailed example go to the [bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2)
+When writing documentation for classes or structs, if it has public methods add a section for those as well. For a detailed example go to the [bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2).
 
 ### Operators (classes and structs)
-When writing documentation for classes or structs, if it has public operators add a section for those as well. For a detailed example go to the [bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2)
+When writing documentation for classes or structs, if it has public operators add a section for those as well. For a detailed example go to the [bool2 example](/KSAModding/advanced-internals/code-docs/Brutal/Numerics/bool2).
