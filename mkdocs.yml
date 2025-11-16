@@ -38,7 +38,8 @@ nav:
       - Parts: modding-guides/parts.md
       - Planets: modding-guides/planet.md
       - System: modding-guides/system.md
-      - Code: modding-guides/code.md
+      - Code:
+        - First Steps: modding-guides/code/first-steps.md
   - Pipelines & Tools:
       - Modeling Pipeline: pipelines-tools/modeling-pipeline.md
       - Texture Pipeline: pipelines-tools/texture-pipeline.md
