@@ -110,3 +110,72 @@ namespace FirstMod
 }
 
 ```
+
+IStarMapMod requires you to implement 3 functions
+
+- `public void OnImmediatLoad()`
+- `public void OnFullyLoaded()`
+- `public void Unload()`
+
+So lets do that next
+
+```c#
+using StarMap.API;
+
+namespace FirstMod
+{
+    public class FirstMod : IStarMapMod
+    {
+        public void OnImmediatLoad()
+        {
+
+        }
+
+        public void OnFullyLoaded()
+        {
+
+        }
+
+        public void Unload()
+        {
+
+        }
+    }
+}
+
+```
+
+Lets make a simple hello world program now.
+---
+Just add a `Console.WriteLine("Hello World!")`
+
+Inside FirstMod:
+```c#
+public void OnFullyLoaded()
+{
+    Console.WriteLine("Hello World!");
+}
+```
+
+## Step 3: Creating mod.toml
+
+A mod should always have a mod.toml file so it can be identified by StarMap. Lets Create that file.
+
+1. Create a new file in Visual Studio and call it `mod.toml`.
+2. Edit the file and add this inside, name should always be the name of both the dll and the class that implements IStarMapMod.
+```toml
+name = "FirstMod"
+```
+
+3. Now right click on mod.toml and select `Properties`.
+4. Under properties there is a field called `Copy To Output Directory` set it to `Copy always`.
+
+
+## Step 4: Compiling
+
+If you did all steps correctly simply right clicking the project and selecting `Build` should build the files.
+
+---
+
+The compiled files will now be in the following directory: `projectdir\FirstMod\bin\Debug\net9.0`.
+Now follow the [installation guide](https://github.com/StarMapLoader/StarMap/wiki/Modding#example-mods-and-tutorial-on-how-to-mod) to test your brand new mod. If you did all the steps correctly you should see `Hello World!` in the console output of StarMap.exe.
