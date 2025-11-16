@@ -22,7 +22,7 @@ This guide explains how to add custom 3D models as vehicles/parts in Kitten Spac
 
 KSA uses GLB (GLTF 2.0 binary) format for meshes.
 
-**Model Orientation (Critical):**
+**Model Orientation:**
 
 Before exporting, orient your model according to KSA's coordinate system:
 
