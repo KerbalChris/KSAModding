@@ -34,11 +34,11 @@ nav:
       - Directories and Files: fundamentals/directories-and-files.md
       - Data Formats Overview: fundamentals/data-formats-overview.md
       - Coordinates and Units: fundamentals/coordinates-and-units.md
-  - Mod Types:
-      - Parts: mod-types/parts.md
-      - Planets: mod-types/planet.md
-      - System: mod-types/system.md
-      - Code: mod-types/code.md
+  - Modding Guides:
+      - Parts: modding-guides/parts.md
+      - Planets: modding-guides/planet.md
+      - System: modding-guides/system.md
+      - Code: modding-guides/code.md
   - Pipelines & Tools:
       - Modeling Pipeline: pipelines-tools/modeling-pipeline.md
       - Texture Pipeline: pipelines-tools/texture-pipeline.md
