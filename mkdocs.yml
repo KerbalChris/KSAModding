@@ -49,7 +49,6 @@ nav:
   - Advanced & Internals:
       - Reverse Engineering Notes: advanced-internals/reverse-engineering.md
       - Save File Structure: advanced-internals/save-file-structure.md
-      - Experimental Features: advanced-internals/experimental-features.md
   - Troubleshooting:
       - Common Errors: troubleshooting/common-errors.md
       - Logs and Debugging: troubleshooting/logs-and-debugging.md
