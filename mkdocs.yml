@@ -62,6 +62,13 @@ nav:
       - Documentation Style Guide: meta/style-guide.md
       - Versioning Policy: meta/versioning-policy.md
       - Adding To Code Docs: meta/code-doc-guide.md
+  - Advanced Modding:
+      - KSA.dll:
+        - What is this?: ksa.dll/ksa_dll.md
+        - KSA Section:
+          - Variable:
+            - Significant Variables: ksa.dll/classes/significant_classes.md
+            - Class Types: ksa.dll/classes/class_types.md
 
 plugins:
   - search
