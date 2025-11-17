@@ -34,3 +34,6 @@ KSA is under active development, and modding capabilities may change quickly.
 
 Each page should clearly indicate which **game build or version** it was last tested against. If you spot anything outdated, please open an issue or pull request in the GitHub repository.
 
+## License
+
+This project is licensed under the CC BY-NC-SA 4.0 license. See [README.md](https://github.com/KSAModding/KSAModding/blob/main/LICENSE) for more.
