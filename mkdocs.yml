@@ -55,6 +55,8 @@ nav:
               - Overview: advanced-internals/code-docs/Brutal/Numerics/bool2/bool2.md
               - CopyTo: advanced-internals/code-docs/Brutal/Numerics/bool2/CopyTo.md
         - KSA:
+          - Astronomical:
+            - Overview: advanced-internals/code-docs/KSA/Astronomical/Astronomical.md
           - FlightComputer:
             - Overview: advanced-internals/code-docs/KSA/FlightComputer/FlightComputer.md
           - Vehicle:
