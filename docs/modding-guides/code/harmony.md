@@ -1,3 +1,4 @@
+<sub><sup>Tested with: **KSA Version 2025.11.8.2847**</sup></sub>
 # Getting started with Harmony
 
 ## Overview
@@ -46,6 +47,7 @@ public static void patch()
 
 public static void unload()
 {
+    m_harmony?.UnpatchAll("SimpleMod");
     m_harmony = null;
 }
 ```
