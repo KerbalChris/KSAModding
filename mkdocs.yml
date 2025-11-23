@@ -45,6 +45,7 @@ nav:
         - Harmony: modding-guides/code/harmony.md
         - Input:
           - Keyboard Input: modding-guides/code/input/keyboard-input.md
+        - Creating and Playing Audio: modding-guides/audio.md
   - Pipelines & Tools:
       - Modeling Pipeline: pipelines-tools/modeling-pipeline.md
       - Texture Pipeline: pipelines-tools/texture-pipeline.md
